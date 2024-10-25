@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To go, please</title>
 
     <!-- Include Stylesheet -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css" />
 
     <!-- Include Inter Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- INTRO -->
     <header>
-        <h1>To go, please</h1>
-        <p class="subtitle"><i data-feather="arrow-down"></i> scroll to start</p>
-
+      <div class="hero">
+        <div class="hero-text">
+          <h1><i data-feather="coffee"></i><br />To go, please</h1>
+          <p class="subtitle">a story by roman und jan</p>
+        </div>
+        <a href="#intro">
+          <p class="cta">scroll to start</p>
+          <i data-feather="arrow-down"></i>
+        </a>
+        
+      </div>
     </header>
 
+    <section class="intro" id="intro">
+      <p class="left">Hey! Willkomme im Café! Was hetsch gern?</p>
+      <p class="right">ähm, en Cappuchino bitte</p>
+      <p class="left">Zum da trinke oder <u>to go</u>?</p>
+      <p class="right">...</p>
+    </section>
+
     <section class="double">
-        <img src="assets/img/test-pic.jpg" alt="Test Pic">
-        <img src="assets/img/test-pic.jpg" alt="Test Pic">
-        <img src="assets/img/test-pic.jpg" alt="Test Pic">
-        <img src="assets/img/test-pic.jpg" alt="Test Pic">
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
     </section>
 
     <!-- CONVERSATION WITH AUDIO -->
     <section class="single">
+      <div>
+        <img src="assets/img/test-pic.jpg" alt="Test Pic" />
         <audio controls autoplay>
-            <source src="assets/audio/xxx.ogg" type="audio/ogg">
-            <source src="assets/audio/xxx.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
+          <source src="assets/audio/xxx.ogg" type="audio/ogg" />
+          <source src="assets/audio/xxx.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div>
+        <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+        <audio controls autoplay>
+          <source src="assets/audio/xxx.ogg" type="audio/ogg" />
+          <source src="assets/audio/xxx.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </section>
-    
+
     <section class="double">
-        
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="" alt="" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="" alt="" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+      <img src="" alt="" />
+      <img src="assets/img/test-pic.jpg" alt="Test Pic" />
+    </section>
+
+    <section class="outro">
+      <p class="right">...</p>
+      <p class="right">zum da trinke gern</p>
     </section>
 
     <footer>
-
+        <p>&copy; 2024 - a project by roman gonser und jan zeller</p>
     </footer>
 
     <!-- Include Script -->
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>

@@ -1,12 +1,26 @@
-html,
-body {
-	border: none;
-	margin: 0;
-	padding: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: black;
+/* --------------------- reset -------------------- */
+:root {
+    --grid-row-gap: 3vw;
+    --grid-column-gap: 10vw;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* ------------------ general styles / typo ------------------ */
 img {
     width: 100%;
 }
@@ -14,33 +28,135 @@ img {
 h1 {
     font-weight: 700;
     font-size: 6rem;
-    margin-bottom: 30px;
-    color: white;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 p {
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
     color: white;
 }
 
-svg {
-    stroke-width: 2;
-    width: 30px;
-    height: 30px;
+/* ---------------- special typo ------------------------- */
+p.subtitle {
+    font-weight: 200;
+    padding-left: 10px;
+    margin-top: 0;
+    font-size: 1.5rem;
 }
 
-header, section, footer {
+p.cta {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h1>svg {
+    width: 100px;
+    height: 100px;
+    stroke-width: 2;
+}
+
+.hero>a  {
+    text-align: center;
+    color: #ffffff5a;
+
+    svg {
+        stroke-width: 2;
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+    }
+}
+
+/*------------------------ layout --------------- */
+header,
+section,
+footer {
     width: 80vw;
+    max-width: 1500px;
     margin: 0 auto;
 }
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 75%;
+        width: 100%;
+    }
+}
+
+section.intro {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
+}
+
+    .left {
+        background-color: #bebebe;
+        color: black;
+        border-radius: 50px;
+        padding: 15px 30px;
+        width: fit-content;
+    }
+
+    .right {
+        align-self: flex-end;
+        background-color: rgb(10, 132, 255);
+        border-radius: 50px;
+        padding: 15px 30px;
+    }
 
 
 section.double {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 75px;
-    grid-row-gap: 25px;
+    grid-column-gap: var(--grid-column-gap);
 
-    margin-bottom: 2rem;
+    grid-row-gap: var(--grid-row-gap);
+    margin-bottom: var(--grid-row-gap);
+}
+
+section.single {
+    display: grid;
+    grid-template-columns: .5fr;
+    justify-content: center;
+
+    grid-row-gap: var(--grid-row-gap);
+    margin-bottom: var(--grid-row-gap);
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+section.outro {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
+}
+
+footer {
+    text-align: center;
+    padding: 80px;
+    padding-top: 15vh;
+    color: #ffffff5a;
+
 }
