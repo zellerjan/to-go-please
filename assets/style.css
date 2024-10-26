@@ -53,17 +53,16 @@ p.subtitle {
     font-size: 1.5rem;
 }
 a.cta {
-    transition: transform 0.2s ease; /* Smooth transition on hover */
-  /* Animation setup */
+    transition: transform 0.2s ease;
     animation: pulse 3s 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
     0%, 100% {
-      transform: scale(1); /* Original size */
+      transform: scale(1);
     }
     50% {
-      transform: scale(1.1); /* Slightly larger */
+      transform: scale(1.1);
     }
   }
 
@@ -276,7 +275,7 @@ section.fade-in {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     p {
