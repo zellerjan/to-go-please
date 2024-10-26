@@ -14,11 +14,13 @@ document.querySelectorAll("section").forEach((section) => {
     observer.observe(section);
 });
 
-// CHANGE IMAGE ON CLICK TO LIVIO IN TRASH
 function changeImage() {
-    if (document.getElementById("imgClickAndChange").src == "assets/img/To-Go-17.jpg"){
-        document.getElementById("imgClickAndChange").src = "assets/img/To-Go-99.jpg";
+    const imgElement = document.getElementById("imgClickAndChange");
+
+    // Check if the src ends with "To-Go-17.jpg"
+    if (imgElement.src.endsWith("assets/img/To-Go-17.jpg")) {
+        imgElement.src = "assets/img/To-Go-99.jpg";
     } else {
-        document.getElementById("imgClickAndChange").src = "assets/img/To-Go-17.jpg";
+        imgElement.src = "assets/img/To-Go-17.jpg";
     }
 }
