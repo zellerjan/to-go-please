@@ -153,6 +153,10 @@ section.outro {
     flex-direction: column;
     justify-content: center;
     padding: var(--grid-column-gap);
+
+    h1 {
+        text-align: center;
+    }
 }
 
 footer {
@@ -161,6 +165,44 @@ footer {
     padding-top: 10vh;
     color: #ffffff5a;
 
+}
+
+/* Audio Player Container */
+audio {
+    width: 100%;              /* Passt die Breite an den Container an */
+    max-width: 300px;         /* Maximalbreite für bessere Übersichtlichkeit */
+    height: 40px;             /* Standardhöhe für eine kompakte Anzeige */
+    margin: 1rem auto;        /* Zentriert mit einheitlichem Abstand */
+    background-color: #333;   /* Dunkler Hintergrund für Kontrast */
+    color: #fff;              /* Textfarbe für guten Lesekontrast */
+    border-radius: 5px;       /* Abgerundete Ecken */
+    outline: none;            /* Entfernt Standardrahmen */
+}
+
+/* Anpassung der Bedienelemente */
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-enclosure {
+    background-color: #333;   /* Anpassung des Control-Panel-Hintergrunds */
+    color: #fff;              /* Anpassung der Symbolfarbe */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    filter: invert(1);        /* Anpassung für helle Icons auf dunklem Hintergrund */
+}
+
+/* Zusätzliche Style-Anpassungen für Firefox */
+audio {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für dezenten 3D-Effekt */
+}
+
+/* Hover-Effekte */
+audio:hover {
+    background-color: #444;   /* Leichter Farbwechsel bei Hover */
+    cursor: pointer;
 }
 
 
