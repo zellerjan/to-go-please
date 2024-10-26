@@ -165,7 +165,7 @@ section.double {
 
 section.single {
     display: grid;
-    grid-template-columns: .44fr;
+    grid-template-columns: 1fr;
     justify-content: center;
 
     grid-row-gap: var(--grid-row-gap);

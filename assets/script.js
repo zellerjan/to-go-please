@@ -13,3 +13,12 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll("section").forEach((section) => {
     observer.observe(section);
 });
+
+// CHANGE IMAGE ON CLICK TO LIVIO IN TRASH
+function changeImage() {
+    if (document.getElementById("imgClickAndChange").src == "assets/img/To-Go-17.jpg"){
+        document.getElementById("imgClickAndChange").src = "assets/img/To-Go-99.jpg";
+    } else {
+        document.getElementById("imgClickAndChange").src = "assets/img/To-Go-17.jpg";
+    }
+}
