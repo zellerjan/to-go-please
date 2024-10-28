@@ -283,6 +283,10 @@ section.fade-in {
         font-size: 1rem;
     }
 
+    header {
+        height: 90vh;
+    }
+
     header,
     section,
     footer {
